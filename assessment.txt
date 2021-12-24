@@ -1,0 +1,97 @@
+1.NullPointerException will be raised.
+
+2.Exception is an abnormal condition which is raised in a program and if the exception is
+  raised the rest of the statements will not be executed.
+  Exception handing is a mechanism to handle the exception occured during programming execution
+  so that program runs normally.
+  it is handled by the 5 key words try,catch,throw,throwsand finally.
+  we have two types of exceptions checked and unchecked.And there are other two
+  custom checked and custom unchecked.
+
+3.The exceptions that are created by us by using the hierarchy classes like Exception and RuntimeException
+  to handle the respective exception which makes program to run normally.
+  some time there may be a condition that the buitin exception has no use case with our current requirement.
+  To avoid that we extend the exception class and create
+  our own exceptions.In industry we mostly use custom exception.
+
+4.Encapsulation is the wrapping the data of an object and code acting on the data
+  togatherin a single unit.
+  1.The class name should be public.
+  2.All the properties should be private.
+  3.There should be a public default constructor.
+  4.There should be getters and setter methods.
+  5.final key cannot be used before the class.
+5.polymorphism is the ability of an object to take in many forms.
+  there are two types:compile time polymorphisn and run time polymorphism.
+
+6.A class has many methods with same name but with different parameters and different number of parameters.
+   Sum.java
+
+	public class Sum {
+	void add(int a, int b) {
+		int c = a + b;
+		System.out.println("The sum is :" + c);
+	}
+
+	void add(int a, int b, int c) {
+		int d = a + b + c;
+		System.out.println("The sum is :" + d);
+	}
+
+	void add(int a, int b, int c, int d) {
+		int e = a + b + c + d;
+		System.out.println("The sum is :" + e);
+	}
+      }
+	test.java
+
+	public class Test {
+	public static void main(String[] args) {
+		Sum sum = new Sum();
+		sum.add(2, 4);
+		sum.add(5, 7, 4);
+		sum.add(1, 2, 3, 4);
+	}
+	}
+7.changing the implementation of parent class in the child class is known as method overriding.
+  Child.java
+
+	public class Child extends Father {
+	public void drive() {
+		System.out.println("child is driving");
+	}
+      }
+
+	Father.java
+
+	public class Father {
+	public void drive() {
+		System.out.println("father is driving");
+	}
+	}
+
+ 	Test.java
+
+	public class Test{
+	public static void main(String[] args) {
+		Father father = new Father();
+		Child child = new Child();
+		father.drive();
+		child.drive();
+	}
+  	}
+
+8.args
+
+9.No output
+
+10.X-workz provide java Enterprise application training.
+
+11.Hiding the implementation of logic and showing what exactly user needed.
+   there are two ways to acheive through abstraction class and interfaces.
+   By using interfaces we can acheive 100% abstraction.The abstract methods and static constants make interface to acheive.
+12.there are two ways
+	static and instance
+
+
+ 
